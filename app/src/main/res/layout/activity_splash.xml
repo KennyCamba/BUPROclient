@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/colorPrimaryDark">
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/login"
+            android:id="@+id/ligin"/>
+
+        <RelativeLayout
+            android:id="@+id/login"
+            android:layout_width="175dp"
+            android:layout_height="46dp"
+            android:layout_alignLeft="@+id/ligin"
+            android:layout_alignTop="@+id/ligin"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="453dp"
+            android:text="Button" />
+
+        <RelativeLayout
+            android:id="@+id/registro"
+            android:layout_width="175dp"
+            android:layout_height="46dp"
+            android:layout_alignLeft="@+id/ligin"
+            android:layout_alignTop="@+id/ligin"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="598dp"
+            android:text="Button" />
+
+
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#2F3A94">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPresent"
+                    android:textSize="16pt"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/user"
+                    android:layout_gravity="center"
+                    android:hint="Usuario/email"
+                    android:textSize="12pt"
+                    android:textAlignment="center"
+                    android:inputType="text"
+                    android:background="@drawable/shape_round"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pass"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPresent"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16pt"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/pass"
+                    android:hint="Contraseña"
+                    android:layout_gravity="center"
+                    android:textSize="12pt"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:background="@drawable/shape_round"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/entrar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text="ENTRAR"
+                    android:background="#241BBF"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textSize="12pt"/>
+
+Z
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/registro"
+                android:text="REGISTRO"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="12pt"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
